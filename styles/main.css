@@ -1,13 +1,14 @@
 html {
-     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+     height: 100%; 
      font-size: 100%;
  }
  
  body {
-     font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
-     color: white;             /* sets the text color to white */
-     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+     font-family: 'Open Sans'; 
+     color: white;           
+     min-height: 100%;         
  }
+ 
  
 body.landing {
      background-color: rgb(58,23,63);
@@ -23,8 +24,7 @@ body.landing {
  .navbar .logo {
      position: relative; 
      left: 2rem;
-     cursor: pointer;  /* produces the finger-pointer icon when you hover over the logo */
- }
+     cursor: pointer;   }
  
  .navbar .links-container {
      display: table;
@@ -56,8 +56,9 @@ body.landing {
      color: rgb(233,50,117);
  }
  .links-container .navbar-link:active {
-     background-color: white;
-       color: rgb(233,50,117);
+ 	background-color: white;
+     color: rgb(233,50,117);
+     
  }
  
 
@@ -76,10 +77,14 @@ body.landing {
      -moz-transform: translateY(-50%);
      -ms-transform: translateY(-50%);
      transform: translateY(-50%);
-     width: 100%;                         		font-size: 4rem;                     		font-weight: 300;             
+     width: 100%;                         		
+     font-size: 4rem;                     		
+     font-weight: 300;             
     text-transform: uppercase;
-    letter-spacing: 0.5rem;             		text-shadow: 1px 1px 0px rgb(58,23,63);
-     }
+    letter-spacing: 0.5rem;             		
+    text-shadow: 1px 1px 0px rgb(58,23,63);   
+  }
+     
 .selling-points {
      position: relative;
      display: table;
@@ -123,6 +128,10 @@ body.landing {
 .container {
      margin: 0 auto;
      max-width: 64rem;
+ }
+ .container.narrow {
+	 	max-width: 56rem;
+	 	
  }
  .column {
          float: left;
