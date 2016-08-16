@@ -1,7 +1,0 @@
-Read through and bookmark these resources (or this checkpoint) for reference:
-
-Brackets How-To Guide: an overview of Brackets' many features.
-https://github.com/adobe/brackets/wiki/How-to-Use-Brackets
-
-Brackets Course: video demonstrations on how to use Brackets.
-http://css-snippets.com/brackets-course/
