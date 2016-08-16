@@ -97,14 +97,23 @@ var currentlyPlayingSong = null;
          });
      }
     
-     function findParentByClassName(element,targetClass) {
-        if (element) {
-            var currentParent = element.parentElement;
-            while (currentParent.className != targetClass && currentParent.className !== null) {
-            currentParent = currentParent.parentElement;
-        }
-        return currentParent;
+    
+if (element) {
+    var currentParent = element.parentElement;
+    // If the parent is not null (parent was found)
+    if (currentParent !== null){
+        // Alert that no parent was found
+        alert("No parent found");
+    }  
+    // While the parent's class name is not equal to the class we want
+    // AND while the current parent's class name is not null
+    while (currentParent.className != targetClass && currentParent.className !== null) {
+        // Go to the direct parent of the current element
+        currentParent = currentParent.parentElement;
     }
+    // Alert that there is no parent found with the class name
+    alert("No parent found with that class name");
+}
          
 };
     var getSongItem = function(element) {
@@ -164,7 +173,4 @@ var currentlyPlayingSong = null;
          }
      });
  };
-
-
-
   
