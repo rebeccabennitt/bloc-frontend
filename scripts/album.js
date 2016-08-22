@@ -67,6 +67,7 @@ var albumEinstein = {
 		duration: '1:25'
 	}]
 };
+
 var albums = [albumPicasso, albumMarconi, albumEinstein];
 var index = 1;
 albumImage.addEventListener('click', function(event) {
@@ -76,7 +77,7 @@ albumImage.addEventListener('click', function(event) {
 		index = 0;
 	}
 });
-//replace album table with js template
+
 var createSongRow = function(songNumber, songName, songLength) {
 		var template = '<tr class="album-view-song-item">' + '  <td class="song-item-number" data-song-number="' + songNumber + '">' + songNumber + '</td>' + '  <td class="song-item-title">' + songName + '</td>' + '  <td class="song-item-duration">' + songLength + '</td>' + '</tr>';
 		var $row = $(template);
@@ -125,9 +126,7 @@ var createSongRow = function(songNumber, songName, songLength) {
 		$row.hover(onHover, offHover);
 
 		return $row;
-
-
-
+		
 		var setCurrentAlbum = function() {
 				var $albumTitle = $('.album-view-title');
 				var $albumArtist = $('.album-view-artist');
