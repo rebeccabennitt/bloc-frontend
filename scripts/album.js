@@ -1,7 +1,4 @@
-var setSong = function(songNumber) {
-	currentlyPlayingSongNumber = parseInt(songNumber);
-	currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
-};
+
 
 var getSongNumberCell = function(number) {
     return $('.song-item-number[data-song-number="' + number + '"]');
@@ -63,6 +60,11 @@ var offHover = function(event) {
 		$row.find('.song-item-number').click(clickHandler);
 		$row.hover(onHover, offHover);
 		return $row;
+
+var setSong = function(songNumber) {
+	currentlyPlayingSongNumber = parseInt(songNumber);
+	currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
+};
 
 
 var setCurrentAlbum = function(album) {
