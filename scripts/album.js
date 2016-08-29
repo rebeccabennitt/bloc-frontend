@@ -126,7 +126,7 @@ var setTotalTimeInPlayerBar = function(totalTime) {
     var $totalTimeElement = $('.seek-control .total-time');
     $totalTimeElement.text(totalTime); 
 };
-
+//assignment 34
 var filterTimeCode = function(timeInSeconds) {
     var seconds = Number.parseFloat(timeInSeconds);
     var wholeSeconds = Math.floor(seconds);
